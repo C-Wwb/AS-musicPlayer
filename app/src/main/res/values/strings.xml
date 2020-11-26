@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">music</string>
+    <!--主页头部-->
+    <string name="main_head_my">music</string>
+    <!--主页内容-->
+    <string name="main_content_title_songSheet">All the songs</string>
+
+    <string name="wwb">power by wwb</string>
+
+    <string name="menu_download">download</string>
+    <string name="bug">Add playlist</string>
+    <string name="todo">TODO</string>
+    <string name="add_to_playlist">Add to playlist</string>
+    <string name="create_a_playlist">create a playlist</string>
+    <string name="please_enter_the_name_of_the_playlist">please enter the name of the playlist</string>
+    <string name="cancel">cancel</string>
+    <string name="confirm">confirm</string>
+
+</resources>

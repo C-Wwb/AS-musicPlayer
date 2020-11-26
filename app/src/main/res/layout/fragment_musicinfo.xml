@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/info_head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/main_head_underline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/info_head_back"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginStart="10sp"
+            android:src="@drawable/ic_back1"/>
+
+        <TextView
+            android:id="@+id/info_head_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20sp"
+            android:paddingStart="20sp"
+            android:lineSpacingExtra="5sp"
+            android:textColor="@color/black"
+            tools:text="song name\nsinger"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="363dp"
+        android:layout_height="533dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info_head"
+        app:srcCompat="@drawable/logo4" />
+
+    <LinearLayout
+        android:id="@+id/info_footer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/overline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:id="@+id/info_last"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_last_black" />
+
+        <ImageView
+            android:id="@+id/info_play"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            tools:background="@drawable/ic_play_black"
+            />
+
+        <ImageView
+            android:id="@+id/info_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_next_black" />
+
+        <SeekBar
+            android:id="@+id/info_seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginBottom="8dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
